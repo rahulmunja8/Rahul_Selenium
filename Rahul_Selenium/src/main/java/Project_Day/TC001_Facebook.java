@@ -25,9 +25,9 @@ public class TC001_Facebook extends ProjectMethods {
 		public void login() throws InterruptedException {
 			startApp("chrome", "https://www.facebook.com/");
 			WebElement eleUserName = locateElement("id", "email");
-			type(eleUserName, "rahulmunjal8@gmail.com");
+			type(eleUserName, "**********");
 			WebElement elePassword = locateElement("id","pass");
-			type(elePassword, "legendami");
+			type(elePassword, "********");
 			WebElement eleLogin = locateElement("xpath", "(//input[@value='Log In'])");
 			click(eleLogin);
 			Thread.sleep(3000);
