@@ -2,6 +2,7 @@ package utils;
 
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -12,6 +13,7 @@ public class ReadExcel {
 	public static Object[][] getExcelData(String filename) throws IOException {
 		XSSFWorkbook wbook = new XSSFWorkbook("./data/"+filename+".xlsx");
 		XSSFSheet sheet = wbook.getSheetAt(0);
+//		DataFormatter formatter = new DataFormatter();
 		
 		int RowNum = sheet.getLastRowNum();
 		System.out.println("lastRowNum=" +RowNum);
@@ -29,7 +31,8 @@ public class ReadExcel {
 		{
 
 			XSSFCell cell = row.getCell(i);
-			data[j-1][i]=cell.getStringCellValue();
+	data[j-1][i]=cell.getStringCellValue();
+//			data[j-1][i]=formatter.formatCellValue(cell);
 	}
 		
 }

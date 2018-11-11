@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="password" value="crmsfa"/>
-  <parameter name="user" value="DemoSalesManager"/>
-  <parameter name="url" value="http://leaftaps.com/opentaps"/>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.TC002_CreateLead">
+      <class name="Guru99_Ecommerce.Tc003">
         <methods>
-          <include name="CreateLead"/>
-          <include name="closeApp"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="setData"/>
-          <include name="login"/>
-          <include name="beforeClass"/>
+          <include name="errorTest"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- testcase.TC002_CreateLead -->
+      </class> <!-- Guru99_Ecommerce.Tc003 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

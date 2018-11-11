@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.TC005_MergeLead">
+      <class name="Guru99_Ecommerce.Tc003">
         <methods>
-          <include name="setData"/>
-          <include name="beforeSuite"/>
-          <include name="login"/>
-          <include name="DuplicateLeads"/>
-          <include name="beforeClass"/>
+          <include name="errorTest"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- testcase.TC005_MergeLead -->
+      </class> <!-- Guru99_Ecommerce.Tc003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
