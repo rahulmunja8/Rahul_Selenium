@@ -6,11 +6,7 @@
 <parameter name="password" value="crmsfa"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcase.TC004_EditLeads"/>
-      <class name="testcase.TC005_MergeLead"/>
       <class name="testcase.TC002_CreateLead"/>
-      <class name="testcase.TC004_DuplicateLead"/>
-      <class name="testcase.TC003_DeleteLeads"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

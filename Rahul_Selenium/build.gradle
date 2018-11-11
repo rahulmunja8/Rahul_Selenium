@@ -52,7 +52,7 @@ compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
 }
 test{
 useTestNG(){
-suites 'testng.xml'
+suites 'testng_ParamterANDdataProvider.xml'
 }
 sourceSets{
 test.java.srcDir 'src/main/java'
